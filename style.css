@@ -8,6 +8,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+
 .hero {
     height: 100vh;
     display: flex;
@@ -35,6 +36,19 @@ body {
     margin: 20px 0;
 }
 
+.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    padding: 10px 20px;
+    border: 2px solid hsl(190, 90%, 50%);
+    border-radius: 5px;
+    background-color: white;
+
+    cursor: pointer;
+}
+
 .hero__buttons__player {
     text-transform: uppercase;
     font-weight: bold;
@@ -52,4 +66,100 @@ body {
     color: white;
     background-color: hsl(190, 90%, 50%);
     border: 2px solid white;
+}
+
+.game {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.game__options {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game__options__back {
+    border: none;
+    padding: 0;
+}
+
+.game__options__back:hover {
+    color: hsl(190, 90%, 50%);
+    
+}
+
+.game__options__clear {
+    border: 2px solid hsl(0, 50%, 50%);
+}
+
+.game__options__clear:hover {
+    background-color: hsl(0, 90%, 70%);
+}
+
+.game__turn {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.game__turn.green {
+    color: hsl(120, 50%, 50%);
+}
+
+.game__turn.red {
+    color: hsl(0, 80%, 50%);
+}
+
+.board {
+    max-width: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid hsl(190, 90%, 50%);
+    padding: 20px;
+}
+
+.board__pad {
+    height: 200px;
+    border: 2px solid hsl(200, 10%, 50%);
+    cursor: pointer;
+}
+
+.board__pad:hover {
+    background-color: hsl(200, 10%, 90%);
+}
+
+.game__over {
+    position: absolute;
+    bottom: 0;
+    top: 95px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    border: 1px solid red;
+    background-color: hsla(0, 0%, 0%, .7);
+}
+
+.game__over__player {
+    font-size: 90px;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.game__over__again:hover {
+    color: white;
+    background-color: hsl(190, 90%, 50%);
+}
+
+.hidden {
+    display: none;
 }

@@ -17,14 +17,26 @@
             <h1 class="hero__title">Tic-Tac-Toe</h1>
             <p class="hero__desc">A game that whose marks got 3 in a row win!!!</p>
             <div class="hero__buttons">
-                <button class="hero__buttons__player">Versus Player &raquo;</button>
+                <button class="button hero__buttons__player">Versus Player &raquo;</button>
             </div>
         </div>
     </div>
 
-    <div class="board">
-        
-    </div>
+    <section class="game hidden">
+        <div class="game__options">
+            <button class="button game__options__back">&laquo; Go Back</button>
+            <button class="button game__options__clear">Clear Board</button>
+        </div>
+        <p class="game__turn"></p>
+        <section class="board">
+            
+        </section>
+
+        <section class="game__over hidden">
+            <h2 class="game__over__player"></h2>
+            <button class="button game__over__again">Play Again</button>
+        </section>
+    </section>
 
     <script src="index.js"></script>
 </body>
