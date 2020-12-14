@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__overlay {
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 120px;
+    color: hsl(190, 90%, 50%);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero__desc {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.hero__buttons {
+    margin: 20px 0;
+}
+
+.hero__buttons__player {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    padding: 10px 20px;
+    border: 2px solid hsl(190, 90%, 50%);
+    border-radius: 5px;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.hero__buttons__player:hover {
+    color: white;
+    background-color: hsl(190, 90%, 50%);
+    border: 2px solid white;
+}
